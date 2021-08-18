@@ -39,3 +39,8 @@ tui = { version = "0.16.0", default-features = false, features = ["crossterm"] }
 anyhow = "1.0.43"
 textwrap = "0.14.2"
 defmt-decoder = { version = "0.2.2", features = ["unstable"] }
+
+[patch."https://github.com/probe-rs/probe-rs"]
+probe-rs = { git = "https://github.com/twelho/probe-rs" }
+gdb-server = { git = "https://github.com/twelho/probe-rs" }
+probe-rs-cli-util = { git = "https://github.com/twelho/probe-rs", default-features = false, features=["anyhow"] }
